@@ -45,12 +45,20 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void testNumber(View view){
+        String message="";
 
         EditText usersNumber=(EditText)findViewById(R.id.usersNumber);
+
+        if(usersNumber.getText().toString().isEmpty()){
+            message="Please enter a number";
+            Toast.makeText(getApplicationContext(),message,Toast.LENGTH_LONG).show();
+
+        }
+        else{
         Number myNumber=new Number();
         myNumber.Number=Integer.parseInt(usersNumber.getText().toString());
 
-        String message="";
+
         if(myNumber.isSquare()){
 
             if (myNumber.isTriangular()){
@@ -73,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
         Toast.makeText(getApplicationContext(),message,Toast.LENGTH_LONG).show();
-
+        }
     }
 
     @Override
