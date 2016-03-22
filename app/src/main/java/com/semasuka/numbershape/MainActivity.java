@@ -54,21 +54,21 @@ public class MainActivity extends AppCompatActivity {
         if(myNumber.isSquare()){
 
             if (myNumber.isTriangular()){
-                message= myNumber.Number + "is both triangular and square number!";
+                message= myNumber.Number + " is both triangular and square number!";
 
             }
             else{
-                message=myNumber.Number + "it is square, but not triangular";
+                message=myNumber.Number + " it is square, but not triangular";
             }
 
         }
         else {
             if (myNumber.isTriangular()){
-                message= myNumber.Number + "is triangular but not square";
+                message= myNumber.Number + " is triangular but not square";
 
             }
             else{
-                message=myNumber.Number + "it is neither square nor triangular";
+                message=myNumber.Number + " it is neither square nor triangular";
             }
 
         }
