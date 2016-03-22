@@ -51,10 +51,6 @@ public class MainActivity extends AppCompatActivity {
     public void testNumber(View view){
 
         EditText usersNumber=(EditText)findViewById(R.id.usersNumber);
-
-
-
-
         Number myNumber=new Number();
         myNumber.Number=Integer.parseInt(usersNumber.getText().toString());
         System.out.println("Is "+myNumber.Number+" a square number?Answer:"+myNumber.isSquare());
