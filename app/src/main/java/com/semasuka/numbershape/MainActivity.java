@@ -7,10 +7,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
-
-
-
     class Number{
         int Number;
         public boolean isSquare(){
@@ -48,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-
     public void testNumber(View view){
 
         EditText usersNumber=(EditText)findViewById(R.id.usersNumber);
@@ -59,23 +54,25 @@ public class MainActivity extends AppCompatActivity {
         if(myNumber.isSquare()){
 
             if (myNumber.isTriangular()){
-                message= myNumber.Number + "is both triangular and square number";
+                message= myNumber.Number + "is both triangular and square number!";
 
             }
+            else{
+                message=myNumber.Number + "it is square, but not triangular";
+            }
 
+        }
+        else {
+            if (myNumber.isTriangular()){
+                message= myNumber.Number + "is triangular but not square";
+
+            }
+            else{
+                message=myNumber.Number + "it is neither square nor triangular";
+            }
 
         }
         Toast.makeText(getApplicationContext(),message,Toast.LENGTH_LONG).show();
-
-
-
-
-
-        System.out.println("Is "+myNumber.Number+" a square number?Answer:"+myNumber.isSquare());
-        System.out.println("Is " + myNumber.Number + " a triangular number?Answer:" + myNumber.isTriangular());
-
-
-
 
     }
 
