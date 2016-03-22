@@ -34,16 +34,17 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
-        android:id="@+id/editText"
+        android:id="@+id/usersNumber"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="Test number"
         android:id="@+id/button"
-        android:layout_below="@+id/editText"
+        android:layout_below="@+id/usersNumber"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="91dp" />
+        android:layout_marginTop="91dp"
+        android:onClick="testNumber" />
 </RelativeLayout>
